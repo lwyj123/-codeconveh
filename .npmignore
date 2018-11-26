@@ -1,0 +1,14 @@
+/src/
+/types/
+/test/
+
+/bld/examples/
+/bld/test/
+/coverage/
+
+/tsconfig.json
+/tslint.json
+/prettier.config.js
+/yarn.lock
+
+.*
