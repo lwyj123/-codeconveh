@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "build": "yarn lint && rm -rf dist && tsc"
+    "build": "yarn lint && rm -rf dist && tsc && cp -r src/commands/commitlint/template dist/commands/commitlint"
   },
   "repository": {
     "type": "git",
