@@ -3,7 +3,7 @@ import 'source-map-support/register';
 import { Command, command, metadata } from 'clime';
 import * as fse from 'fs-extra';
 import * as path from 'path';
-import { exec } from '../../utils/child-process-promise';
+import { exec } from 'child-process-promise';
 
 @command({
   description: 'This is a command that init commitfile in current directory',
