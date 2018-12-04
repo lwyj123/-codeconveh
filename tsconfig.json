@@ -19,5 +19,14 @@
     "outDir": "dist",
     "plugins": []
   },
-  "include": ["src", "types"]
+  "include": [
+    "src",
+    "types"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/**/__mocks__/*"
+  ]
 }

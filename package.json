@@ -6,7 +6,9 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "lint": "tslint -c tslint.json -p tsconfig.json",
-    "build": "yarn lint && rm -rf dist && tsc && cp -r src/commands/commitlint/template dist/commands/commitlint"
+    "build": "yarn lint && rm -rf dist && tsc && cp -r src/commands/commitlint/template dist/commands/commitlint",
+    "test": "jest",
+    "testWithCoverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -35,16 +37,19 @@
     "@types/chalk": "^0.4.31",
     "@types/fs-extra": "^5.0.4",
     "@types/glob": "^5.0.32",
+    "@types/jest": "^23.3.10",
     "@types/node": "^8.0.25",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
     "child-process-promise": "^2.2.1",
     "glob": "^7.1.3",
     "husky": "^1.2.0",
+    "jest": "^23.6.0",
     "nyc": "^13.1.0",
     "source-map-support": "^0.5.9",
+    "ts-jest": "^23.10.5",
     "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.1",
-    "typescript": "^3.1.6"
+    "typescript": "^3.2.1"
   }
 }
