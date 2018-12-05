@@ -2,6 +2,19 @@
   "extends": "tslint-config-airbnb",
   "rules": {
     "no-require-imports": false,
-    "variable-name": false
+    "variable-name": false,
+    "max-line-length": [
+      true,
+      200
+    ],
+    "import-name": false,
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules",
+      "src/**/*.test.ts",
+      "src/**/*.spec.ts",
+      "src/**/__mocks__/*"
+    ]
   }
 }
